@@ -6,8 +6,8 @@ function agregarTarea(nuevaTarea) {
 }
 
 function borrarTarea(idTarea) {
-  let lista = data.filter((tarea) => tarea.id !== idTarea);
-  data = lista;
+  const lista = data.filter((tarea) => tarea.id !== idTarea);
+  data= lista;
 }
 function imprimirLista() {
   return data;
