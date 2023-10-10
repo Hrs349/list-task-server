@@ -5,7 +5,7 @@ const listaDeTareas = require("./dbList-task");
 
 
 router.get('/', (req, res, next) => {
-  res.status(200).json([listaDeTareas]);
+  res.status(200).json(listaDeTareas);
   next();
 });
 
