@@ -1,16 +1,16 @@
 const express = require('express')
 const app = express()
 const port = 4000
-const listView = require('.list-view-router')
+const listView = require('./list-view-router')
 const {listaDeTareas} = require('./dbList-task')
 
 
 
 app.use('/task/list-view-router',listView)
-//app.use(express.json)
+app.use(express.json)
 
 app.get('/', (req,res) => {
-res.send("listaDeTareas")
+res.json(listaDeTareas)
 
 
 
